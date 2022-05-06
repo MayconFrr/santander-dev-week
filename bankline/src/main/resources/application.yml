@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+spring:
+  application:
+    name: bankline
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bankline
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: true
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create-drop
